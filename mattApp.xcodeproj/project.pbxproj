@@ -23,6 +23,9 @@
 		A1828B9526A9BE0100DB6CFA /* technologyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828B9426A9BE0000DB6CFA /* technologyViewController.swift */; };
 		A1828B9926A9C38000DB6CFA /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828B9826A9C38000DB6CFA /* homeViewController.swift */; };
 		A1828B9B26A9C3C600DB6CFA /* pond drop.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A1828B9A26A9C3C600DB6CFA /* pond drop.mp4 */; };
+		D331652D26AA03A400DFD209 /* nuttrition1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331652C26AA03A400DFD209 /* nuttrition1VC.swift */; };
+		D331652F26AA03D900DFD209 /* nutrition2VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331652E26AA03D900DFD209 /* nutrition2VC2.swift */; };
+		D331653226AA045400DFD209 /* nutrition3VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331653126AA045400DFD209 /* nutrition3VC3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		A1828B9426A9BE0000DB6CFA /* technologyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = technologyViewController.swift; sourceTree = "<group>"; };
 		A1828B9826A9C38000DB6CFA /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		A1828B9A26A9C3C600DB6CFA /* pond drop.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pond drop.mp4"; sourceTree = "<group>"; };
+		D331652C26AA03A400DFD209 /* nuttrition1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuttrition1VC.swift; sourceTree = "<group>"; };
+		D331652E26AA03D900DFD209 /* nutrition2VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nutrition2VC2.swift; sourceTree = "<group>"; };
+		D331653126AA045400DFD209 /* nutrition3VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nutrition3VC3.swift; sourceTree = "<group>"; };
 		D74605155676BFE711E18CC4 /* Pods-mattApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mattApp.debug.xcconfig"; path = "Target Support Files/Pods-mattApp/Pods-mattApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +92,10 @@
 				A1828B9326A9BDE800DB6CFA /* academicsVCs */,
 				A1828ADA26A638CB00DB6CFA /* View Controllers */,
 				A1828AC626A6386500DB6CFA /* Main.storyboard */,
+				D331653126AA045400DFD209 /* nutrition3VC3.swift */,
+				D331652E26AA03D900DFD209 /* nutrition2VC2.swift */,
+				D331652C26AA03A400DFD209 /* nuttrition1VC.swift */,
+				D331653026AA03E900DFD209 /* nutritionVCs */,
 				A1828AC926A6386900DB6CFA /* Assets.xcassets */,
 				A1828ACB26A6386900DB6CFA /* LaunchScreen.storyboard */,
 				A1828ACE26A6386900DB6CFA /* Info.plist */,
@@ -124,6 +134,13 @@
 				2094BA67789404A3FEF34F71 /* Pods-mattApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D331653026AA03E900DFD209 /* nutritionVCs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = nutritionVCs;
 			sourceTree = "<group>";
 		};
 		D3C3903CDDC58E8B5D9D037F /* Frameworks */ = {
@@ -257,8 +274,11 @@
 				A1828B9226A9BDE400DB6CFA /* historyViewController.swift in Sources */,
 				A1828AC526A6386500DB6CFA /* ViewController.swift in Sources */,
 				A1828AC126A6386500DB6CFA /* AppDelegate.swift in Sources */,
+				D331652D26AA03A400DFD209 /* nuttrition1VC.swift in Sources */,
 				A1828AD726A638B900DB6CFA /* LoginViewController.swift in Sources */,
 				A1828AC326A6386500DB6CFA /* SceneDelegate.swift in Sources */,
+				D331653226AA045400DFD209 /* nutrition3VC3.swift in Sources */,
+				D331652F26AA03D900DFD209 /* nutrition2VC2.swift in Sources */,
 				A1828B8C26A9BDC500DB6CFA /* scienceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
