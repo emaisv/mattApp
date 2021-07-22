@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BCCAB81F79D5B5902FFEF07 /* Pods_mattApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C8FF29A2F418591ABBFC22 /* Pods_mattApp.framework */; };
 		A1828AC126A6386500DB6CFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828AC026A6386500DB6CFA /* AppDelegate.swift */; };
 		A1828AC326A6386500DB6CFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828AC226A6386500DB6CFA /* SceneDelegate.swift */; };
 		A1828AC526A6386500DB6CFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828AC426A6386500DB6CFA /* ViewController.swift */; };
@@ -15,13 +16,19 @@
 		A1828ACD26A6386900DB6CFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1828ACB26A6386900DB6CFA /* LaunchScreen.storyboard */; };
 		A1828AD526A638AF00DB6CFA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828AD426A638AF00DB6CFA /* SignUpViewController.swift */; };
 		A1828AD726A638B900DB6CFA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828AD626A638B900DB6CFA /* LoginViewController.swift */; };
-		A1828AD926A638C600DB6CFA /* HomescreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828AD826A638C600DB6CFA /* HomescreenViewController.swift */; };
-		A1828B4026A7E08300DB6CFA /* studioGhibli.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A1828B3F26A7E08300DB6CFA /* studioGhibli.mp4 */; };
-		A1828B4226A86FEE00DB6CFA /* Fiona-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1828B4126A86FEE00DB6CFA /* Fiona-Regular.ttf */; };
+		A1828B8C26A9BDC500DB6CFA /* scienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828B8B26A9BDC500DB6CFA /* scienceViewController.swift */; };
+		A1828B8E26A9BDD100DB6CFA /* mathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828B8D26A9BDD100DB6CFA /* mathViewController.swift */; };
+		A1828B9026A9BDD900DB6CFA /* englishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828B8F26A9BDD900DB6CFA /* englishViewController.swift */; };
+		A1828B9226A9BDE400DB6CFA /* historyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828B9126A9BDE400DB6CFA /* historyViewController.swift */; };
+		A1828B9526A9BE0100DB6CFA /* technologyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828B9426A9BE0000DB6CFA /* technologyViewController.swift */; };
+		A1828B9926A9C38000DB6CFA /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828B9826A9C38000DB6CFA /* homeViewController.swift */; };
+		A1828B9B26A9C3C600DB6CFA /* pond drop.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A1828B9A26A9C3C600DB6CFA /* pond drop.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A1828ABD26A6386500DB6CFA /* FirebaseLoginSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseLoginSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C8FF29A2F418591ABBFC22 /* Pods_mattApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mattApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2094BA67789404A3FEF34F71 /* Pods-mattApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mattApp.release.xcconfig"; path = "Target Support Files/Pods-mattApp/Pods-mattApp.release.xcconfig"; sourceTree = "<group>"; };
+		A1828ABD26A6386500DB6CFA /* mattApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mattApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1828AC026A6386500DB6CFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1828AC226A6386500DB6CFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A1828AC426A6386500DB6CFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,9 +38,14 @@
 		A1828ACE26A6386900DB6CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1828AD426A638AF00DB6CFA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A1828AD626A638B900DB6CFA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A1828AD826A638C600DB6CFA /* HomescreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenViewController.swift; sourceTree = "<group>"; };
-		A1828B3F26A7E08300DB6CFA /* studioGhibli.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = studioGhibli.mp4; path = ../../../Downloads/studioGhibli.mp4; sourceTree = "<group>"; };
-		A1828B4126A86FEE00DB6CFA /* Fiona-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Fiona-Regular.ttf"; path = "../../../Downloads/Fiona/Fiona-Regular.ttf"; sourceTree = "<group>"; };
+		A1828B8B26A9BDC500DB6CFA /* scienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scienceViewController.swift; sourceTree = "<group>"; };
+		A1828B8D26A9BDD100DB6CFA /* mathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mathViewController.swift; sourceTree = "<group>"; };
+		A1828B8F26A9BDD900DB6CFA /* englishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = englishViewController.swift; sourceTree = "<group>"; };
+		A1828B9126A9BDE400DB6CFA /* historyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyViewController.swift; sourceTree = "<group>"; };
+		A1828B9426A9BE0000DB6CFA /* technologyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = technologyViewController.swift; sourceTree = "<group>"; };
+		A1828B9826A9C38000DB6CFA /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		A1828B9A26A9C3C600DB6CFA /* pond drop.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pond drop.mp4"; sourceTree = "<group>"; };
+		D74605155676BFE711E18CC4 /* Pods-mattApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mattApp.debug.xcconfig"; path = "Target Support Files/Pods-mattApp/Pods-mattApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BCCAB81F79D5B5902FFEF07 /* Pods_mattApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,13 +65,15 @@
 			children = (
 				A1828ABF26A6386500DB6CFA /* MATT Proto */,
 				A1828ABE26A6386500DB6CFA /* Products */,
+				B7B7CF489445B9808605ED42 /* Pods */,
+				D3C3903CDDC58E8B5D9D037F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		A1828ABE26A6386500DB6CFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1828ABD26A6386500DB6CFA /* FirebaseLoginSignup.app */,
+				A1828ABD26A6386500DB6CFA /* mattApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,15 +81,15 @@
 		A1828ABF26A6386500DB6CFA /* MATT Proto */ = {
 			isa = PBXGroup;
 			children = (
-				A1828B3F26A7E08300DB6CFA /* studioGhibli.mp4 */,
 				A1828AC026A6386500DB6CFA /* AppDelegate.swift */,
 				A1828AC226A6386500DB6CFA /* SceneDelegate.swift */,
+				A1828B9326A9BDE800DB6CFA /* academicsVCs */,
 				A1828ADA26A638CB00DB6CFA /* View Controllers */,
 				A1828AC626A6386500DB6CFA /* Main.storyboard */,
 				A1828AC926A6386900DB6CFA /* Assets.xcassets */,
 				A1828ACB26A6386900DB6CFA /* LaunchScreen.storyboard */,
 				A1828ACE26A6386900DB6CFA /* Info.plist */,
-				A1828B4126A86FEE00DB6CFA /* Fiona-Regular.ttf */,
+				A1828B9A26A9C3C600DB6CFA /* pond drop.mp4 */,
 			);
 			path = "MATT Proto";
 			sourceTree = "<group>";
@@ -85,29 +100,60 @@
 				A1828AC426A6386500DB6CFA /* ViewController.swift */,
 				A1828AD426A638AF00DB6CFA /* SignUpViewController.swift */,
 				A1828AD626A638B900DB6CFA /* LoginViewController.swift */,
-				A1828AD826A638C600DB6CFA /* HomescreenViewController.swift */,
+				A1828B9826A9C38000DB6CFA /* homeViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A1828B9326A9BDE800DB6CFA /* academicsVCs */ = {
+			isa = PBXGroup;
+			children = (
+				A1828B9426A9BE0000DB6CFA /* technologyViewController.swift */,
+				A1828B8B26A9BDC500DB6CFA /* scienceViewController.swift */,
+				A1828B8D26A9BDD100DB6CFA /* mathViewController.swift */,
+				A1828B8F26A9BDD900DB6CFA /* englishViewController.swift */,
+				A1828B9126A9BDE400DB6CFA /* historyViewController.swift */,
+			);
+			name = academicsVCs;
+			sourceTree = "<group>";
+		};
+		B7B7CF489445B9808605ED42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D74605155676BFE711E18CC4 /* Pods-mattApp.debug.xcconfig */,
+				2094BA67789404A3FEF34F71 /* Pods-mattApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D3C3903CDDC58E8B5D9D037F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14C8FF29A2F418591ABBFC22 /* Pods_mattApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A1828ABC26A6386500DB6CFA /* FirebaseLoginSignup */ = {
+		A1828ABC26A6386500DB6CFA /* mattApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1828AD126A6386900DB6CFA /* Build configuration list for PBXNativeTarget "FirebaseLoginSignup" */;
+			buildConfigurationList = A1828AD126A6386900DB6CFA /* Build configuration list for PBXNativeTarget "mattApp" */;
 			buildPhases = (
+				5CFC4EFF7D5BBD0F1E0ED3BB /* [CP] Check Pods Manifest.lock */,
 				A1828AB926A6386500DB6CFA /* Sources */,
 				A1828ABA26A6386500DB6CFA /* Frameworks */,
 				A1828ABB26A6386500DB6CFA /* Resources */,
+				D36C9893FCD59E63165D66CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FirebaseLoginSignup;
+			name = mattApp;
 			productName = "MATT Proto";
-			productReference = A1828ABD26A6386500DB6CFA /* FirebaseLoginSignup.app */;
+			productReference = A1828ABD26A6386500DB6CFA /* mattApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A1828AB826A6386500DB6CFA /* Build configuration list for PBXProject "FirebaseLoginSignup" */;
+			buildConfigurationList = A1828AB826A6386500DB6CFA /* Build configuration list for PBXProject "mattApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1828ABC26A6386500DB6CFA /* FirebaseLoginSignup */,
+				A1828ABC26A6386500DB6CFA /* mattApp */,
 			);
 		};
 /* End PBXProject section */
@@ -149,25 +195,71 @@
 			files = (
 				A1828ACD26A6386900DB6CFA /* LaunchScreen.storyboard in Resources */,
 				A1828ACA26A6386900DB6CFA /* Assets.xcassets in Resources */,
-				A1828B4026A7E08300DB6CFA /* studioGhibli.mp4 in Resources */,
-				A1828B4226A86FEE00DB6CFA /* Fiona-Regular.ttf in Resources */,
+				A1828B9B26A9C3C600DB6CFA /* pond drop.mp4 in Resources */,
 				A1828AC826A6386500DB6CFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5CFC4EFF7D5BBD0F1E0ED3BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mattApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D36C9893FCD59E63165D66CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mattApp/Pods-mattApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mattApp/Pods-mattApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mattApp/Pods-mattApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1828AB926A6386500DB6CFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1828B8E26A9BDD100DB6CFA /* mathViewController.swift in Sources */,
 				A1828AD526A638AF00DB6CFA /* SignUpViewController.swift in Sources */,
-				A1828AD926A638C600DB6CFA /* HomescreenViewController.swift in Sources */,
+				A1828B9926A9C38000DB6CFA /* homeViewController.swift in Sources */,
+				A1828B9026A9BDD900DB6CFA /* englishViewController.swift in Sources */,
+				A1828B9526A9BE0100DB6CFA /* technologyViewController.swift in Sources */,
+				A1828B9226A9BDE400DB6CFA /* historyViewController.swift in Sources */,
 				A1828AC526A6386500DB6CFA /* ViewController.swift in Sources */,
 				A1828AC126A6386500DB6CFA /* AppDelegate.swift in Sources */,
 				A1828AD726A638B900DB6CFA /* LoginViewController.swift in Sources */,
 				A1828AC326A6386500DB6CFA /* SceneDelegate.swift in Sources */,
+				A1828B8C26A9BDC500DB6CFA /* scienceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +403,7 @@
 		};
 		A1828AD226A6386900DB6CFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74605155676BFE711E18CC4 /* Pods-mattApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,6 +423,7 @@
 		};
 		A1828AD326A6386900DB6CFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2094BA67789404A3FEF34F71 /* Pods-mattApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -350,7 +444,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A1828AB826A6386500DB6CFA /* Build configuration list for PBXProject "FirebaseLoginSignup" */ = {
+		A1828AB826A6386500DB6CFA /* Build configuration list for PBXProject "mattApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1828ACF26A6386900DB6CFA /* Debug */,
@@ -359,7 +453,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1828AD126A6386900DB6CFA /* Build configuration list for PBXNativeTarget "FirebaseLoginSignup" */ = {
+		A1828AD126A6386900DB6CFA /* Build configuration list for PBXNativeTarget "mattApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1828AD226A6386900DB6CFA /* Debug */,

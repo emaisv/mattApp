@@ -7,16 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Fiona-Regular.ttf">
-            <string>Fiona-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirebaseLoginSignup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mattApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +68,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="51E-OQ-oJg">
             <objects>
-                <viewController id="oDI-9M-KYI" customClass="SignInViewController" customModule="FirebaseLoginSignup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oDI-9M-KYI" customClass="SignInViewController" customModule="mattApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RsS-WH-jIF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +104,7 @@
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
                                             <action selector="signUpTapped:" destination="oDI-9M-KYI" eventType="touchUpInside" id="aNn-ui-NrW"/>
-                                            <segue destination="VKm-Qp-90g" kind="show" id="2Me-h6-cvP"/>
+                                            <segue destination="8UU-YE-arA" kind="presentation" modalPresentationStyle="fullScreen" id="dOF-aM-H3f"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IW5-Eu-bsR">
@@ -173,7 +168,7 @@
         <!--Login View Controller-->
         <scene sceneID="Dbe-ee-r1R">
             <objects>
-                <viewController id="tpl-Ae-BAU" customClass="LoginViewController" customModule="FirebaseLoginSignup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tpl-Ae-BAU" customClass="LoginViewController" customModule="mattApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LXz-ba-vVv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,179 +231,6 @@
             </objects>
             <point key="canvasLocation" x="1764" y="600"/>
         </scene>
-        <!--Homescreen View Controller-->
-        <scene sceneID="yFs-iN-vJI">
-            <objects>
-                <viewController storyboardIdentifier="Home VC" id="VKm-Qp-90g" customClass="HomescreenViewController" customModule="FirebaseLoginSignup" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vkc-LQ-uh3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImM-TG-Wt9">
-                                <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="0.0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="circlebadge.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1eV-8a-CDa">
-                                <rect key="frame" x="-14" y="235.5" width="250" height="254"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="circlebadge.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KWD-Nr-hFU">
-                                <rect key="frame" x="-14" y="639.5" width="250" height="254"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="circlebadge.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cQy-4G-WxX">
-                                <rect key="frame" x="180" y="431.5" width="250" height="254"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="welcome, user" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91s-aA-H0W">
-                                <rect key="frame" x="0.0" y="73" width="346" height="152"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Fiona-Regular" family="Fiona" pointSize="63"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKf-Rg-TNd">
-                                <rect key="frame" x="39" y="338" width="144" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Academics">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="28T-iR-OUT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ImM-TG-Wt9" firstAttribute="centerY" secondItem="vkc-LQ-uh3" secondAttribute="centerY" id="WKz-Hs-dBH"/>
-                            <constraint firstItem="ImM-TG-Wt9" firstAttribute="centerX" secondItem="vkc-LQ-uh3" secondAttribute="centerX" id="hI5-dR-1Lc"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ajf-Rh-qme"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7x9-bD-Odx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2640.579710144928" y="285.9375"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="4OU-Ts-bqT">
-            <objects>
-                <viewController id="e8j-i0-IPh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AeZ-mY-pMg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Science" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IaP-8E-Bfz">
-                                <rect key="frame" x="70" y="59" width="274" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.91980725529999996" green="0.59208356380000005" blue="0.55312545810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="73"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Application to the Real World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwo-tA-bjX">
-                                <rect key="frame" x="28" y="235" width="359" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" systemColor="systemPurpleColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flT-Ds-FBD">
-                                <rect key="frame" x="0.0" y="301" width="2673" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Science is used everyday to explain how everything around us works they way it does. As technology and education improves, discoveries and refinement to previous understandings have also improved. These create the environment for career growth within the science field. Meaning, paying attention in chemistry class might actually have some worth.</string>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Career Pathways" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTt-jJ-JAa">
-                                <rect key="frame" x="102" y="359" width="211" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" systemColor="systemPurpleColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ai-yh-oBO">
-                                <rect key="frame" x="0.0" y="416" width="2489" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Science offers so many opportunities because of the multiple fields of science that exist. Careers range from medical professionals to STEM education. Engineering and corporate science leaders are all possibilities. It is recommended that you research the logistics of your major and college to view the common career pathways.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scholarships" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzH-de-y6l">
-                                <rect key="frame" x="126" y="470" width="162" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" systemColor="systemPurpleColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x90-f0-QYl">
-                                <rect key="frame" x="98" y="512" width="222" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="$1500 STEM Scholarship"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sM3-qT-Bfi">
-                                <rect key="frame" x="77" y="555" width="263" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Procter &amp; Gamble Scholarship"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5P-id-iEA">
-                                <rect key="frame" x="-2" y="598" width="426" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="STEM Teachers for America's Future Scholarship"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaq-1R-BZ7">
-                                <rect key="frame" x="57" y="641" width="312" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Lockheed Martin STEM Schoalrship"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Developmental Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plw-pS-QNw">
-                                <rect key="frame" x="44" y="706" width="325" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" systemColor="systemPurpleColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSC-Qe-ArV">
-                                <rect key="frame" x="158" y="749" width="96" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Girl Genius"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiU-24-kB4">
-                                <rect key="frame" x="56" y="776" width="311" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="SAMS @Carnegie Mellon University"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL5-ac-vCs">
-                                <rect key="frame" x="35" y="808" width="352" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Hutton Junior Fisheries Biology Program"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktN-Lr-zeJ">
-                                <rect key="frame" x="-99" y="176" width="1307" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">the intellectual and practical activity encompassing the systematic study of the structure and behavior of the physical and natural world through observation and experiment</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="FZU-Zf-217"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QAW-E4-vR5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3469.5652173913045" y="-382.36607142857139"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="mHW-f2-sZM">
             <objects>
@@ -441,14 +263,505 @@
             </objects>
             <point key="canvasLocation" x="4904" y="198"/>
         </scene>
+        <!--techScreen-->
+        <scene sceneID="Gw6-Yh-Vn6">
+            <objects>
+                <viewController title="techScreen" id="XtL-TZ-QzP" customClass="technologyViewController" customModule="mattApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C5F-4y-qCt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utz-XW-w3Z">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1156"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vcm-hj-FNo" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="1200"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="87H-Xq-dXc">
+                                                <rect key="frame" x="20" y="90" width="374" height="163"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Technology is something that touches every part of the world, so it’s crucial that students become familiar with the tools that will shape their future. Technology is science or knowledge put into practical use to solve problems or invent useful tools.</string>
+                                                <color key="textColor" red="0.2192181349" green="0.31720894579999998" blue="0.3529452682" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Technology" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlF-95-i4N">
+                                                <rect key="frame" x="20" y="27" width="308" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="55"/>
+                                                <color key="textColor" red="0.2192181349" green="0.31720894579999998" blue="0.3529452682" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resources" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8z-iA-WeA">
+                                                <rect key="frame" x="20" y="850" width="139" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="25"/>
+                                                <color key="textColor" red="0.28707738640000002" green="0.32320596470000001" blue="0.3003998095" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Career Paths" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocf-5V-DaU">
+                                                <rect key="frame" x="20" y="503" width="139" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="25"/>
+                                                <color key="textColor" red="0.28707738643291147" green="0.32320596468588236" blue="0.30039980950807077" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scholarships" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f14-qc-5JC">
+                                                <rect key="frame" x="255" y="678" width="139" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="25"/>
+                                                <color key="textColor" red="0.28707738640000002" green="0.32320596470000001" blue="0.3003998095" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="41U-BP-8Bm" userLabel="Resources">
+                                                <rect key="frame" x="20" y="888" width="130" height="175"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAj-wI-bB3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="2TO-rB-bKr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="Udemy">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="udemyURL:" destination="XtL-TZ-QzP" eventType="touchUpInside" id="EM1-CK-Qmc"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D75-5C-jw6">
+                                                        <rect key="frame" x="0.0" y="25" width="130" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="8oe-Rm-h6g"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="Lynda">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="lyndaURL:" destination="XtL-TZ-QzP" eventType="touchUpInside" id="eef-VX-ZDW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7F-90-qqO">
+                                                        <rect key="frame" x="0.0" y="50" width="130" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="6GK-Vc-zgu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="TechTogether Boston">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="ttBostonURL:" destination="XtL-TZ-QzP" eventType="touchUpInside" id="y1a-iy-hHa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOY-Ni-o8n">
+                                                        <rect key="frame" x="0.0" y="75" width="130" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="hb0-nK-ToO"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="KodeWithKlossy">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="kwkURL:" destination="XtL-TZ-QzP" eventType="touchUpInside" id="29d-qL-3lN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2Y-Pt-06Q">
+                                                        <rect key="frame" x="0.0" y="100" width="130" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="Peo-RD-v4i"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="MLH">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="mlhURL:" destination="XtL-TZ-QzP" eventType="touchUpInside" id="lBL-a4-Maq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ree-H8-Go0">
+                                                        <rect key="frame" x="0.0" y="125" width="130" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="qNg-yR-zer"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="Built By Girls">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="bbgURL:" destination="XtL-TZ-QzP" eventType="touchUpInside" id="ssn-vi-wux"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NM-fx-VcV">
+                                                        <rect key="frame" x="0.0" y="150" width="130" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="1pn-pQ-RcY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="Code Academy">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="codeAcadURL:" destination="XtL-TZ-QzP" eventType="touchUpInside" id="y6G-nw-74v"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zTr-h4-RX2" userLabel="Career Paths">
+                                                <rect key="frame" x="20" y="541" width="186" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="left" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JF7-uD-5RA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="186" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="Information Security Manager">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="infoSecManURL:" destination="XtL-TZ-QzP" eventType="touchUpInside" id="vyN-Kw-fpd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="left" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDP-TH-fdj">
+                                                        <rect key="frame" x="0.0" y="30" width="186" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="Machine Learning Engineer">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="machLearnEngURL:" destination="XtL-TZ-QzP" eventType="touchUpInside" id="XC2-2D-pzR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Yc0-N0-dWp">
+                                                <rect key="frame" x="189" y="716" width="205" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nV0-pM-SHJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="205" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="Cognizant Making the Future">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="POV-YV-2UA">
+                                                        <rect key="frame" x="0.0" y="20" width="205" height="0.0"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="Adobe Women in Technology">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hn-wj-s5v">
+                                                        <rect key="frame" x="0.0" y="40" width="205" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="Amazon Future Engineer">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="amazonFutEngURL:" destination="XtL-TZ-QzP" eventType="touchUpInside" id="E4v-dQ-de6"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="POV-YV-2UA" firstAttribute="height" secondItem="nV0-pM-SHJ" secondAttribute="height" id="5fF-gQ-K0K"/>
+                                                    <constraint firstAttribute="width" constant="205" id="glk-vc-5mw"/>
+                                                    <constraint firstItem="1hn-wj-s5v" firstAttribute="height" secondItem="nV0-pM-SHJ" secondAttribute="height" id="lnE-aZ-OSu"/>
+                                                </constraints>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gvo-Zh-g3l" customClass="YTPlayerView">
+                                                <rect key="frame" x="79" y="286" width="257" height="179"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="QxC-7x-Q5g"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vcm-hj-FNo" firstAttribute="top" secondItem="utz-XW-w3Z" secondAttribute="top" id="E94-Pt-Fen"/>
+                                    <constraint firstItem="vcm-hj-FNo" firstAttribute="bottom" secondItem="utz-XW-w3Z" secondAttribute="bottom" id="LkX-WJ-u0Z"/>
+                                    <constraint firstItem="vcm-hj-FNo" firstAttribute="trailing" secondItem="utz-XW-w3Z" secondAttribute="trailing" id="UgL-pR-oH4"/>
+                                    <constraint firstItem="vcm-hj-FNo" firstAttribute="leading" secondItem="utz-XW-w3Z" secondAttribute="leading" id="bUA-JO-70Q"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lVH-0Z-cse"/>
+                        <color key="backgroundColor" red="0.93344116210000005" green="0.9258788228" blue="0.88626080750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="utz-XW-w3Z" firstAttribute="trailing" secondItem="lVH-0Z-cse" secondAttribute="trailing" id="ADF-F1-hHb"/>
+                            <constraint firstItem="utz-XW-w3Z" firstAttribute="top" secondItem="lVH-0Z-cse" secondAttribute="top" id="GGi-FY-tSw"/>
+                            <constraint firstItem="vcm-hj-FNo" firstAttribute="width" secondItem="C5F-4y-qCt" secondAttribute="width" id="MhP-54-bem"/>
+                            <constraint firstAttribute="bottom" secondItem="utz-XW-w3Z" secondAttribute="bottom" id="e8D-rt-t6J"/>
+                            <constraint firstItem="utz-XW-w3Z" firstAttribute="leading" secondItem="lVH-0Z-cse" secondAttribute="leading" id="iFz-Nl-zox"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DVZ-zn-ST4"/>
+                    <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="playerView" destination="Gvo-Zh-g3l" id="j8v-F7-9iN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ypy-sa-LVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844.9275362318842" y="-1157.1428571428571"/>
+        </scene>
+        <!--homeScreen-->
+        <scene sceneID="EmT-Xb-SJI">
+            <objects>
+                <viewController title="homeScreen" id="8UU-YE-arA" customClass="ViewController" customModule="mattApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PSu-xg-6CC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgz-HB-Ipd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1156"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFr-XI-wJZ" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xx-mK-2DC">
+                                                <rect key="frame" x="190" y="553" width="206" height="252"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="35"/>
+                                                <inset key="contentEdgeInsets" minX="7" minY="130" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="academics" backgroundImage="lilyPad3"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeq-4t-zWo">
+                                                <rect key="frame" x="8" y="821" width="206" height="270"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="35"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-13" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="future" backgroundImage="lilyPadImg">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkP-N3-07A">
+                                                <rect key="frame" x="8" y="227" width="241" height="253"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="35"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="wellness" backgroundImage="wellnessButton"/>
+                                                <connections>
+                                                    <action selector="wellnessClick:" destination="8UU-YE-arA" eventType="touchUpInside" id="I4W-B1-Bmr"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="welcome, user" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1C-F4-bc8">
+                                                <rect key="frame" x="22" y="-15" width="374" height="169"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="60"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="7Rj-fH-Ecg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rFr-XI-wJZ" firstAttribute="leading" secondItem="lgz-HB-Ipd" secondAttribute="leading" id="4tq-Gr-N8C"/>
+                                    <constraint firstAttribute="bottom" secondItem="rFr-XI-wJZ" secondAttribute="bottom" id="Mpf-9z-Otk"/>
+                                    <constraint firstItem="rFr-XI-wJZ" firstAttribute="top" secondItem="lgz-HB-Ipd" secondAttribute="top" id="hf5-Ms-GLA"/>
+                                    <constraint firstAttribute="trailing" secondItem="rFr-XI-wJZ" secondAttribute="trailing" id="vez-Gb-YPa"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zkW-BO-Z2z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lgz-HB-Ipd" firstAttribute="leading" secondItem="zkW-BO-Z2z" secondAttribute="leading" id="511-oE-Y0F"/>
+                            <constraint firstItem="lgz-HB-Ipd" firstAttribute="top" secondItem="zkW-BO-Z2z" secondAttribute="top" id="8hC-cI-hdV"/>
+                            <constraint firstAttribute="bottom" secondItem="lgz-HB-Ipd" secondAttribute="bottom" id="Ybl-QL-TGZ"/>
+                            <constraint firstItem="lgz-HB-Ipd" firstAttribute="trailing" secondItem="zkW-BO-Z2z" secondAttribute="trailing" id="lkG-5W-Hwh"/>
+                            <constraint firstItem="rFr-XI-wJZ" firstAttribute="width" secondItem="PSu-xg-6CC" secondAttribute="width" id="xHp-vA-2Bu"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="1200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xD-lL-SWf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660.8695652173915" y="189.50892857142856"/>
+        </scene>
+        <!--scienceScreen-->
+        <scene sceneID="efY-jp-yHF">
+            <objects>
+                <viewController title="scienceScreen" id="9UF-a4-3bb" customClass="scienceViewController" customModule="mattApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GbU-WA-kjY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQc-7P-saU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1156"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZK-hw-sTr" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="1200"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nfC-el-kFc">
+                                                <rect key="frame" x="20" y="90" width="374" height="222"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Science is used everyday to explain how everything around us works they way it does. As technology and education improves, discoveries and refinement to previous understandings have also improved. These create the environment for career growth within the science field. Meaning, paying attention in chemistry class might actually have some worth. </string>
+                                                <color key="textColor" red="0.2192181349" green="0.31720894579999998" blue="0.3529452682" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Science" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biV-er-yaA">
+                                                <rect key="frame" x="20" y="27" width="308" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="55"/>
+                                                <color key="textColor" red="0.2192181349" green="0.31720894579999998" blue="0.3529452682" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resources" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHh-tI-7QV">
+                                                <rect key="frame" x="20" y="911" width="139" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="25"/>
+                                                <color key="textColor" red="0.28707738640000002" green="0.32320596470000001" blue="0.3003998095" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HSa-cj-yKp" userLabel="Resources">
+                                                <rect key="frame" x="20" y="949" width="247" height="75"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suq-g8-WZl" userLabel="How Stuff Works">
+                                                        <rect key="frame" x="0.0" y="0.0" width="247" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="xMj-JF-s1B"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="How Stuff Works">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="howThingsWorkURL:" destination="9UF-a4-3bb" eventType="touchUpInside" id="rmx-d7-83n"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5x-Vc-KQO">
+                                                        <rect key="frame" x="0.0" y="25" width="247" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="ok8-xN-ZyJ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="SAMS @ Carnegie Mellon University">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="samsCarMelURL:" destination="9UF-a4-3bb" eventType="touchUpInside" id="ItZ-LV-pW5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6u-c1-kdD">
+                                                        <rect key="frame" x="0.0" y="50" width="247" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="usD-r8-gCY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="Hutton Junior Fisheries Biology Program">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="hutJunFishURL:" destination="9UF-a4-3bb" eventType="touchUpInside" id="Z47-Sw-fBa"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Wy-bv-zen" customClass="YTPlayerView">
+                                                <rect key="frame" x="79" y="333" width="257" height="179"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scholarships" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3do-MJ-92A">
+                                                <rect key="frame" x="255" y="779" width="139" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="25"/>
+                                                <color key="textColor" red="0.28707738640000002" green="0.32320596470000001" blue="0.3003998095" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eos-mP-hKR">
+                                                <rect key="frame" x="20" y="571" width="374" height="200"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Science offers so many opportunities because of the multiple fields of science that exist. Careers range from medical professionals to STEM education. Engineering and corporate science leaders are all possibilities. It is recommended that you research the logistics of your major and college to view the common career pathways.</string>
+                                                <color key="textColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Career Paths" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iD-vq-Ykf">
+                                                <rect key="frame" x="20" y="548" width="139" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="25"/>
+                                                <color key="textColor" red="0.28707738640000002" green="0.32320596470000001" blue="0.3003998095" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XVD-3Q-aFV">
+                                                <rect key="frame" x="189" y="807" width="205" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABP-nT-RAi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="205" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="Lockheed Martin STEM">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="lockMartSTEMURL:" destination="9UF-a4-3bb" eventType="touchUpInside" id="Mcf-VH-TFl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="sIu-hj-yzx">
+                                                        <rect key="frame" x="0.0" y="30" width="205" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                                        <state key="normal" title="Science Ambassador">
+                                                            <color key="titleColor" red="0.4195790291" green="0.47090649600000001" blue="0.4352858067" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="scienceAmbassURL:" destination="9UF-a4-3bb" eventType="touchUpInside" id="y13-00-VrN"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="205" id="836-xV-h85"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="Kwm-4x-YC7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CZK-hw-sTr" firstAttribute="trailing" secondItem="UQc-7P-saU" secondAttribute="trailing" id="1NW-md-B3B"/>
+                                    <constraint firstItem="CZK-hw-sTr" firstAttribute="leading" secondItem="UQc-7P-saU" secondAttribute="leading" id="2b8-PV-26i"/>
+                                    <constraint firstItem="CZK-hw-sTr" firstAttribute="bottom" secondItem="UQc-7P-saU" secondAttribute="bottom" id="dSX-l0-6v7"/>
+                                    <constraint firstItem="CZK-hw-sTr" firstAttribute="top" secondItem="UQc-7P-saU" secondAttribute="top" id="ipc-E9-wzV"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="STO-5o-7TR"/>
+                        <color key="backgroundColor" red="0.93344116210000005" green="0.9258788228" blue="0.88626080750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="CZK-hw-sTr" firstAttribute="width" secondItem="GbU-WA-kjY" secondAttribute="width" id="RmL-lo-xAt"/>
+                            <constraint firstAttribute="bottom" secondItem="UQc-7P-saU" secondAttribute="bottom" id="Wo4-Hk-WAN"/>
+                            <constraint firstItem="UQc-7P-saU" firstAttribute="trailing" secondItem="STO-5o-7TR" secondAttribute="trailing" id="jyg-k4-gjS"/>
+                            <constraint firstItem="UQc-7P-saU" firstAttribute="top" secondItem="STO-5o-7TR" secondAttribute="top" id="kMi-xK-oYI"/>
+                            <constraint firstItem="UQc-7P-saU" firstAttribute="leading" secondItem="STO-5o-7TR" secondAttribute="leading" id="lVT-fc-Nqt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nj9-cU-TNs"/>
+                    <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="playerView" destination="9Wy-bv-zen" id="0Ub-ML-3U9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S5w-vZ-gRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2605.7971014492755" y="-1157.1428571428571"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="circlebadge.fill" catalog="system" width="128" height="120"/>
+        <image name="lilyPad3" width="345" height="422"/>
+        <image name="lilyPadImg" width="349" height="458"/>
+        <image name="wellnessButton" width="154" height="167"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

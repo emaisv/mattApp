@@ -1,13 +1,13 @@
 //
-//  HomescreenViewController.swift
-//  MATT Proto
+//  mathViewController.swift
+//  mattApp
 //
-//  Created by Emily on 7/19/21.
+//  Created by Emily on 7/22/21.
 //
 
 import UIKit
 
-class HomescreenViewController: UIViewController {
+class mathViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,24 +1,26 @@
 //
 //  ViewController.swift
-//  MATT Proto
+//  scrollTest
 //
-//  Created by Emily on 7/19/21.
+//  Created by Emily on 7/21/21.
 //
 
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
-
-    var player: AVPlayer?
-    @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var logInButton: UIButton!
+class homeViewController: UIViewController {
     
+   
+    var player : AVPlayer?
+
+
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
-        playBackgroundVideo()
-        // Do any additional setup after loading the view.
+       playBackgroundVideo()
     }
+
     func playBackgroundVideo(){
         let path = Bundle.main.path(forResource: "pond drop", ofType: ".mp4")
         player = AVPlayer(url: URL(fileURLWithPath: path!))
@@ -32,12 +34,19 @@ class ViewController: UIViewController {
         player!.play()
         self.player?.isMuted = true
         
-        
     }
-
+    
+    
     @objc func playerItemDidReachEnd(){
         player!.seek(to: CMTime.zero)
     }
-    
+   
+
+    @IBAction func wellnessClick(_ sender: Any) {
+
+    }
 }
+
+
+
 
