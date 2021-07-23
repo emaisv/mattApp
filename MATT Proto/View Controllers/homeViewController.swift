@@ -45,6 +45,10 @@ class homeViewController: UIViewController {
     @IBAction func wellnessClick(_ sender: Any) {
 
     }
+    
+    @IBAction func WaterTrackerPgButton(_ sender: Any) {
+    }
+    
 }
 
 

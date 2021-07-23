@@ -23,6 +23,7 @@
 		A1828B9526A9BE0100DB6CFA /* technologyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828B9426A9BE0000DB6CFA /* technologyViewController.swift */; };
 		A1828B9926A9C38000DB6CFA /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1828B9826A9C38000DB6CFA /* homeViewController.swift */; };
 		A1828B9B26A9C3C600DB6CFA /* pond drop.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A1828B9A26A9C3C600DB6CFA /* pond drop.mp4 */; };
+		A48183BD26AA760B0022E935 /* waterTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48183BC26AA760B0022E935 /* waterTrackerViewController.swift */; };
 		D331652D26AA03A400DFD209 /* nuttrition1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331652C26AA03A400DFD209 /* nuttrition1VC.swift */; };
 		D331652F26AA03D900DFD209 /* nutrition2VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331652E26AA03D900DFD209 /* nutrition2VC2.swift */; };
 		D331653226AA045400DFD209 /* nutrition3VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331653126AA045400DFD209 /* nutrition3VC3.swift */; };
@@ -48,6 +49,7 @@
 		A1828B9426A9BE0000DB6CFA /* technologyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = technologyViewController.swift; sourceTree = "<group>"; };
 		A1828B9826A9C38000DB6CFA /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		A1828B9A26A9C3C600DB6CFA /* pond drop.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pond drop.mp4"; sourceTree = "<group>"; };
+		A48183BC26AA760B0022E935 /* waterTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waterTrackerViewController.swift; sourceTree = "<group>"; };
 		D331652C26AA03A400DFD209 /* nuttrition1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuttrition1VC.swift; sourceTree = "<group>"; };
 		D331652E26AA03D900DFD209 /* nutrition2VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nutrition2VC2.swift; sourceTree = "<group>"; };
 		D331653126AA045400DFD209 /* nutrition3VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nutrition3VC3.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				A1828B9326A9BDE800DB6CFA /* academicsVCs */,
 				A1828ADA26A638CB00DB6CFA /* View Controllers */,
 				A1828AC626A6386500DB6CFA /* Main.storyboard */,
+				A48183BC26AA760B0022E935 /* waterTrackerViewController.swift */,
 				D331653126AA045400DFD209 /* nutrition3VC3.swift */,
 				D331652E26AA03D900DFD209 /* nutrition2VC2.swift */,
 				D331652C26AA03A400DFD209 /* nuttrition1VC.swift */,
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1828B8E26A9BDD100DB6CFA /* mathViewController.swift in Sources */,
+				A48183BD26AA760B0022E935 /* waterTrackerViewController.swift in Sources */,
 				A1828AD526A638AF00DB6CFA /* SignUpViewController.swift in Sources */,
 				A1828B9926A9C38000DB6CFA /* homeViewController.swift in Sources */,
 				A1828B9026A9BDD900DB6CFA /* englishViewController.swift in Sources */,
